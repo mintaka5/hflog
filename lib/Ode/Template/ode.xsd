@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.odeweb.com" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.odeweb.com">
+
+    <element name="Form" type="tns:Form"></element>
+    
+    <complexType name="Form">
+    	<sequence>
+    		<element name="TextField" type="tns:TextField" minOccurs="0"
+    			maxOccurs="unbounded">
+    		</element>
+    		<element name="Select" type="tns:Select" minOccurs="0"
+    			maxOccurs="unbounded">
+    		</element>
+    		<element name="Button" type="string" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="CheckBoxes" type="tns:Select"></element>
+    	</sequence>
+    	<attribute name="name" type="string" use="optional"></attribute>
+    	<attribute name="processor" type="string" use="required"></attribute>
+    </complexType>
+
+
+    <complexType name="Select">
+    	<sequence>
+    		<element name="Label" type="string" minOccurs="1"
+    			maxOccurs="1">
+    		</element>
+    		<element name="DataSource" type="tns:DataSource" minOccurs="0" maxOccurs="1"></element>
+    	</sequence>
+    	<attribute name="name" type="string" use="required"></attribute>
+    	<attribute name="dataSource" type="string" use="optional"></attribute>
+    </complexType>
+
+
+    <complexType name="TextField">
+    	<attribute name="name" type="string" use="required"></attribute>
+    	<attribute name="value" type="string" use="optional"></attribute>
+    </complexType>
+
+    <element name="Block" type="tns:Block"></element>
+    
+    <complexType name="Block">
+    	<attribute name="name" type="string"></attribute>
+    	<attribute name="display" type="boolean"></attribute>
+    </complexType>
+
+
+    <complexType name="DataSource">
+    	<sequence>
+    		<element name="Item" type="tns:Item" minOccurs="1" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="Item">
+    	<attribute name="value" type="string" use="required"></attribute>
+    </complexType>
+
+
+    <element name="DataGrid" type="tns:DataGrid"></element>
+    
+    <complexType name="DataGrid">
+    	<sequence>
+    		<element name="Columns" type="tns:Column" minOccurs="0" maxOccurs="1"></element>
+    		<element name="DataSource" type="tns:DataGridDataSource" minOccurs="0" maxOccurs="1"></element>
+    	</sequence>
+    	<attribute name="name" type="string" use="optional"></attribute>
+    	<attribute name="dataSource" type="string" use="optional"></attribute>
+    </complexType>
+
+    <complexType name="Column">
+    	<sequence>
+    		<element name="DataGridColumn" type="tns:DataGridColumn" minOccurs="1" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="DataGridColumn">
+    	<attribute name="dataField" type="string" use="optional"></attribute>
+    </complexType>
+
+    <complexType name="DataGridDataSource">
+    	<sequence>
+    		<element name="Object" type="tns:Object" minOccurs="1" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="Object"></complexType>
+</schema>

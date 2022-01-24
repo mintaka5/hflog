@@ -1,0 +1,24 @@
+<FilesMatch \.php$>
+    SetHandler php56-cgi
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} !^/images/ [NC]
+    RewriteRule ^(([A-z0-9_-]+)/?)(([A-z0-9_-]+)/?)?(([A-z0-9_-]+)/?)?$ index.php?_page=$2&_mode=$4&_task=$6&%{QUERY_STRING} [L]
+</IfModule>
+
+<IfModule mod_setenvif.c>
+#    AuthType Basic
+#    AuthName "HF Logbook dev area"
+#    AuthUserFile /home/cj5/security/.htpasswd
+#    Require valid-user
+#
+#    SetEnvIf HOST "^dev-hf.cj5.webfactional.com" NEEDS_AUTH
+#
+#    Order Allow,Deny
+#    Allow from all
+#    Deny from env=NEEDS_AUTH
+#
+#    Satisfy any
+</IfModule>

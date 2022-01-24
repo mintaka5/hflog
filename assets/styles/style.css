@@ -1,0 +1,350 @@
+body {
+	font-family: Arial;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#bg {
+	position: fixed;
+	float: none;
+	overflow: hidden;
+	width: 100%;
+	z-index: 1;
+}
+
+#wrap {
+	color: #fff;
+	position: relative;
+	z-index: 2;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	background: url(../images/transparent-bg.png) repeat left top;
+	padding: 20px;
+	top: 50px;
+	-webkit-border-bottom-right-radius: 40px;
+	-webkit-border-bottom-left-radius: 40px;
+	-webkit-border-top-left-radius: 40px;
+	-moz-border-radius-bottomright: 40px;
+	-moz-border-radius-bottomleft: 40px;
+	-moz-border-radius-topleft: 40px;
+	border-bottom-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+	border-top-left-radius: 40px;
+	-khtml-border-radius-bottomright: 40px;
+	-khtml-border-radius-bottomleft: 40px;
+	-khtml-border-radius-topleft: 40px;
+}
+
+h1 {
+	font-size: 116px;
+}
+
+h1 a:link {
+	font-family: 'Cabin Sketch', arial, serif;
+	text-decoration: none;
+}
+
+#header h1 {
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+a:link {
+	color: #e0e0e0;
+	font-weight: bold;
+}
+
+a:visited {
+	color: #e0e0e0;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #e0e0e0;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+img {
+	border: none;
+}
+
+#content {
+	float: left;
+	width: 660px;
+	margin-left: 20px;
+}
+
+#sidebar {
+	float: left;
+	width: 260px;
+}
+
+#flickrGallery {
+	width: 650px;
+}
+
+#flickrGallery>a>img {
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	-moz-border-radius-topleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+	-khtml-border-radius-bottomright: 10px;
+	-khtml-border-radius-bottomleft: 10px;
+	-khtml-border-radius-topleft: 10px;
+	margin: 0 5px 5px 0;
+}
+
+#menu {
+	width: 100%;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#menu ul li {
+	display: inline;
+}
+
+#menu ul li a {
+	float: left;
+	text-decoration: none;
+	color: white;
+	padding: 10.5px 11px;
+	font-size: 140%;
+}
+
+#menu ul li a:visited {
+	color: white;
+}
+
+#menu ul li a:hover,#menu ul li .current {
+	color: white;
+	background-color: #0b75b2;
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	-moz-border-radius-topleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+	-khtml-border-radius-bottomright: 10px;
+	-khtml-border-radius-bottomleft: 10px;
+	-khtml-border-radius-topleft: 10px;
+}
+
+br.clearLeft {
+	clear: left;
+}
+
+#content h2 {
+	font-size: 130%
+}
+
+textarea {
+	font-family: Arial, serif;
+	font-size: 12px;
+}
+
+#donatePizza div:first-child {
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	-khtml-border-radius-topleft: 10px;
+	-khtml-border-radius-topright: 10px;
+	background-color: #c0c0c0;
+	color: #000;
+	padding: 10px;
+}
+
+.element .required {
+	color: red;
+}
+
+#paypalButton {
+	margin-top: 0;
+	text-align: center;
+	border-bottom: 1px solid #c0c0c0;
+	border-right: 1px solid #c0c0c0;
+	border-left: 1px solid #c0c0c0;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+.menuLyr {
+	margin-top: 0;
+	text-align: center;
+	border-bottom: 1px solid #c0c0c0;
+	border-right: 1px solid #c0c0c0;
+	border-left: 1px solid #c0c0c0;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+h3.headerTitle {
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	-khtml-border-radius-topleft: 10px;
+	-khtml-border-radius-topright: 10px;
+	background-color: #c0c0c0;
+	color: #000;
+	padding: 10px;
+	margin-bottom: 0;
+}
+
+ul.headerList {
+	margin-top: 0;
+	border-bottom: 1px solid #c0c0c0;
+	border-right: 1px solid #c0c0c0;
+	border-left: 1px solid #c0c0c0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+
+ul.headerIcons {
+	list-style: none;
+}
+
+ul.headerIcons li {
+	display: inline;
+	padding: 0 5px 0 5px;
+}
+
+.formElement {
+	clear: left;
+}
+
+.formElement label {
+	float: left;
+	width: 100px;
+	margin: 0 0 10px 0;
+}
+
+.formElement .input {
+	float: left;
+	margin: 0 0 10px 0;
+}
+
+.bufferTBR {
+    margin:15px 30px 15px 0;
+}
+
+.data {
+	border-spacing: 0;
+	border-left: 1px solid #e0e0e0;
+	border-top: 1px solid #e0e0e0;
+}
+
+.data th {
+	background-color: #e0e0e0;
+	color: #333;
+}
+
+.data th,.data td {
+	padding: 3px;
+	border-right: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.data td.center {
+	text-align: center;
+}
+
+.data tr.dark {background-color: #333;}
+
+.data tr.light {background-color: inherit;}
+
+.info {
+	border-spacing: 0;
+	border-left: 1px solid #666;
+	border-top: 1px solid #666;
+	border-left: 1px solid #666;
+	cell-padding: 0;
+}
+
+.info th {
+	background-color: inherit;
+}
+
+.info td {
+	padding: 0 0 0 10px;
+}
+
+.info th,.info td {
+	border-bottom: 1px solid #666;
+	border-right: 1px solid #666;
+}
+
+.green {
+	color: green;
+}
+
+.yellow {
+	color: yellow;
+}
+
+.red {
+	color: red;
+}
+
+ul.horizNav {
+	margin-left: 0;
+	padding-left: 0;
+	white-space: nowrap;
+}
+
+ul.horizNav li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+.jHtmlArea iframe {
+	background-color: white;
+	border: 1px solid #bfbfbf;
+}
+
+.postContent {
+	background: url(../images/grey-tranparent-bg.png) repeat left top;
+	padding:10px;
+	color:#000;
+	border:1px solid #e0e0e0;
+	line-height:1.5em;
+}
+
+.postContent a {
+	color:#333;
+}
+
+.postContent a:hover {
+	text-decoration:none;
+}
+
+form .row .element span.error {
+	float:left;
+	color:red;
+}
+
+.goLeft {float:left;}
+
+.worthIt {padding:10px;}

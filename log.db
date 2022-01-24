@@ -1,0 +1,1 @@
+ODEAPP | 2014-02-18 03:16:54 | msg:Unknown configuration parameter 'redirects' | file:/home/quantegy/webapps/apps/ode/lib/Ode/Controller.php | line:116 | function:init | class:Ode_Controller

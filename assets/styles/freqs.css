@@ -1,0 +1,101 @@
+body {
+	font-family: Arial, Verdana, serif;
+	font-size: 12px;
+}
+
+#freqContainer {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+
+form .row label.element span.required {
+	color: red;
+}
+
+form .row div.element span.error {
+	color: red;
+}
+
+form .row {
+	clear: left;
+}
+
+form .row div.element {
+	float: left;
+	margin-bottom: 5px;
+}
+
+form .row label {
+	float: left;
+	width: 150px;
+	margin-bottom: 5px;
+}
+
+table.data {
+	border-left: 1px solid #bfbfbf;
+	border-top: 1px solid #bfbfbf;
+	width: 100%;
+	border-spacing: 0;
+}
+
+table.data thead>tr {
+	background-color: #333;
+}
+
+table.data thead>tr>th {
+	color: #fff;
+}
+
+table.data tbody>tr.bg {
+	background-color: #e0e0e0;
+}
+
+table.data tbody>tr.nobg {
+	background-color: inherit;
+}
+
+table.data tbody>tr>td {
+	padding: 3px;
+	border-spacing: 0;
+	font-size: 11px;
+	border-right: 1px solid #bfbfbf;
+	border-bottom: 1px solid #bfbfbf;
+}
+
+table.data tbody>tr>td.center {
+	text-align: center;
+}
+
+form .field {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+form .field .lbl {
+	float: left;
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+form .field .ele {
+	float: left;
+}
+
+.freqRow {
+	clear: left;
+}
+
+ul.horizNav {
+	margin-left:0;
+	padding-left:0;
+	white-space:nowrap;
+}
+
+ul.horizNav li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
